@@ -5,7 +5,7 @@
   --header-height: 3rem;
   --font-semi: 600;
   --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --first-color: #ff0000;
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== ipografia =====*/
   --body-font: "Poppins", sans-serif;
@@ -368,6 +368,8 @@ img {
 
 
 /* ===== MEDIA =====*/
+
+
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 2rem;
@@ -376,6 +378,17 @@ img {
     width: 200px;
   }
 }
+
+@media screen and (max-width: 766px){
+  .cards{
+    flex-direction: column;
+  }
+  .card{
+    margin-top: 20px;
+  }
+  
+}
+
 @media screen and (min-width: 576px) {
   .home {
     padding: 4rem 0 2rem;
@@ -454,6 +467,7 @@ img {
   .about__img img {
     width: 300px;
   }
+  
   
 @media screen and (min-width: 992px) {
   .bd-grid {
